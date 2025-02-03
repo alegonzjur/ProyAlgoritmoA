@@ -1,0 +1,24 @@
+Este fichero registrará el avance del proyecto en cada día. El proyecto debe cumplir los siguientes objetivos mínimos:
+- Se debe generar un mapa en forma de cuadrícula, cuyas porciones representarán las áreas de una ciudad.
+- Un token/figura/símbolo representará un automóvil, el cual debe ser capaz de ir desde el área de origen 0 hasta cualquier otro área del mapa.
+- Se deben establecer zonas por las que poder transitar (callez o áreas) y zonas bloqueadas (edificios o calles cortadas).
+- El programa debe ejecutarse de forma interactiva, pidiendo al usuario la posición de salida y meta. Además las casillas transitables y bloqueadas también deben poder ser configuradas.
+- El programa debe ser capaz de realizar rutas en forma de zig-zag y no solo yendo a las esquinas o extremos de la cuadrícula.
+- Los resultados deben ser representados en forma de ruta visible en la imagen o cuadrícula resultante.
+
+#---03/02/2025---#
+Planificación del proyecto. 
+El primer objetivo del proyecto será crear una interfaz web que permita al usuario interactuar visualmente con el proyecto. Para la códificación del backend de esta interfaz, 
+utilizaremos Flask, una librería de Python que facilita la creación de interfaces web. 
+El frontend de esta página web se realizará mediante HTML y CSS. 
+
+Comenzamos por crear la estructura inicial del proyecto. 
+
+/ProyAlgoritmoA
+   ├── app.py              # Backend con Flask y lógica del A*│
+   ├── templates/
+   │    └── index.html     # Interfaz gráfica
+   └── static/
+        └── styles.css     # Estilos CSS
+    ├── data               # Guarda archivos y datos para el modulo.
+    ├── doc                # Documentación del proyecto.
