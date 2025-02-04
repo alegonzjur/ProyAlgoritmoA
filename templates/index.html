@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<!-- Codificación de la interfaz -->
+<html>
+<head>
+    <title>Rutas A*</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>Generador de Rutas A*</h1>
+    
+    <!-- Controles -->
+    <div>
+        <button onclick="setStart()">Establecer Inicio</button>
+        <button onclick="setEnd()">Establecer Meta</button>
+        <button onclick="setBlocked()">Bloquear Celda</button>
+        <button onclick="calcularRuta()">Calcular Ruta</button>
+        <button onclick="resetMapa()" style="background-color: #ff4444; color: white;">Reiniciar Todo</button>
+        <!-- Botones adicionales -->
+        <button onclick="deshacer()" id="undoBtn" disabled>⮜ Deshacer</button>
+        <button onclick="rehacer()" id="redoBtn" disabled>⮞ Rehacer</button>
+    </div>
+
+    <!-- Cuadrícula -->
+    <div id="grid">
+        {% for x in range(filas) %}
+            <div class="row">
+                {% for y in range(columnas) %}
+                    <div class="cell" id="cell-{{x}}-{{y}}" 
+                         onclick="handleClick({{x}}, {{y}})"></div>
+                {% endfor %}
+            </div>
+        {% endfor %}
+    </div>
+
+    <script src="{{ url_for('serve_js') }}"></script>
+</body>
+</html>

@@ -10,9 +10,10 @@ Este fichero registrará el avance del proyecto en cada día. El proyecto debe c
 Planificación del proyecto. 
 El primer objetivo del proyecto será crear una interfaz web que permita al usuario interactuar visualmente con el proyecto. Para la códificación del backend de esta interfaz, 
 utilizaremos Flask, una librería de Python que facilita la creación de interfaces web. 
-El frontend de esta página web se realizará mediante HTML y CSS. 
+El frontend de esta página web se realizará mediante HTML y CSS.
+El IDE utilizado para codificar será Visual Studio Code. P
 
-Comenzamos por crear la estructura inicial del proyecto. 
+Se comienza por crear la estructura inicial del proyecto. 
 
 /ProyAlgoritmoA
    ├── app.py              # Backend con Flask y lógica del A*│
@@ -22,3 +23,33 @@ Comenzamos por crear la estructura inicial del proyecto.
         └── styles.css     # Estilos CSS
     ├── data               # Guarda archivos y datos para el modulo.
     ├── doc                # Documentación del proyecto.
+
+
+#---04/02/2025---#
+Comienza la codificación del backend de Flask. Instalamos flask y jsonify, en el terminal de VSCode. Jsonify convierte objetos de Java en cadenas de caracteres JSON.
+Tras terminar el primer prototipo del backend, se procede a codificar el archivo HTML que funcionará como frontend, exponiendo la información del backend. 
+Además, se utilizará CSS para animar el algoritmo, sin decorar inicialmente la interfaz (se realizará posteriormente).
+
+La ejecución del programa inicialmente se realiza a través del CMD. Nos dirigimos al directorio del proyecto, y ejecutamos el archivo Python app.py con python. 
+Una vez efectuado, nos dirijimos al navegador, concretamente a "localhost:5000". A partir de ahí, podremos interactuar con el prototipo. 
+La primera ejecución ha producido un error al calcular la ruta.
+EL error ha sido identificado y corregido. Resulta que el frontend no estaba enviando correctamente la ubicación de las rutas al backend. Una vez corregido, el prototipo funciona correctamente.
+No se ha provisto de un botón que reinicie el algoritmo, más allá de recargar la página. El siguiente objetivo será este.
+
+Tras modificar el backend y el frontend, se ha añadido correctamente un botón de reinicio para el algoritmo. Además, se han asignado estilos concretos con CSS para los botones.
+Las siguientes funcionalidades que se añadirán serán un mensaje de confirmación del reinicio del algoritmo, animaciones de borrado y un historial. Para ello, se utilizarán JavaScript.
+Anteriormente, se ejecutaban los scripts en el HTML debido a que eran bastante sencillos, por ello ahora añadiremos esa configuración a un archivo JavaScript llamado "scripts.js".
+
+La estructura del proyecto pasa a ser: 
+/ProyAlgoritmoA
+   ├── app.py
+   ├── templates/
+   │    └── index.html
+   └── static/
+        ├── styles.css
+        └── scripts.js  # Nuevo archivo para JavaScript
+    ├── doc 
+    ├── data  
+
+Tras la aplicación de los scripts, se ha comprobado el funcionamiento de las nuevas funcionalidades. El botón de deshacer acción funciona, el de rehacer también, pero ahora no se muestra la ruta. 
+Se investigará el error.
