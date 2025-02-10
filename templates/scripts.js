@@ -74,7 +74,7 @@ async function calcularRuta() {
         
         // Mostrar nueva ruta con animación
         if (data.camino) {
-            data.camo.forEach(([x, y], index) => {
+            data.camino.forEach(([x, y], index) => {
                 setTimeout(() => {
                     const cell = document.getElementById(`cell-${x}-${y}`);
                     cell.classList.add('path');
