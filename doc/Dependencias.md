@@ -8,7 +8,11 @@ Las demás librerías son dependencias que utiliza Flask. Las liberías de Pytho
 
 # Librería  --------  Versión
   Flask        ==      3.0.2
+
   Werkzeug     ==      3.0.1
+
   Jinja2       ==      3.1.3
+  
   itsdangerous ==      2.1.2
+  
   click        ==      8.1.7
