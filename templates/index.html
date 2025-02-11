@@ -9,12 +9,12 @@
     <h1>Generador de Rutas A*</h1>
     
     <!-- Controles -->
-    <div>
-        <button onclick="setStart()">Establecer Inicio</button>
-        <button onclick="setEnd()">Establecer Meta</button>
-        <button onclick="setBlocked()">Bloquear Celda</button>
-        <button onclick="calcularRuta()">Calcular Ruta</button>
-        <button onclick="resetMapa()" style="background-color: #ff4444; color: white;">Reiniciar Todo</button>
+    <div class='controls'>
+        <button class="btn-primary" onclick="setStart()">Establecer Inicio</button>
+        <button class='btn-primary' onclick="setEnd()">Establecer Meta</button>
+        <button class='btn-warning' onclick="setBlocked()">Bloquear Celda</button>
+        <button class='btn-success' onclick="calcularRuta()">Calcular Ruta</button>
+        <button class='btn-danger' onclick="resetMapa()" style="background-color: #ff4444; color: white;">Reiniciar Todo</button>
         <!-- Botones adicionales -->
         <button onclick="deshacer()" id="undoBtn" disabled>⮜ Deshacer</button>
         <button onclick="rehacer()" id="redoBtn" disabled>⮞ Rehacer</button>
