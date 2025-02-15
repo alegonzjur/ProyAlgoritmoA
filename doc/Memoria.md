@@ -58,4 +58,8 @@ Se investigará el error.
 El error provenía de un fallo de escritura en una funcion de los scripts de javascript. Proseguimos añadiendo estilos CSS a la interfaz.
 
 # --- 11/02/2025 --- #
-Procedemos a crear un script que instale las dependencias en el PC para su uso. 
+Procedemos a crear un script que instale las dependencias en el PC para su uso. Se ha llevado a cabo correctamente. No se ha podido comprobar el funcionamiento en un entorno en el que no se tiene Python instalado. El último objetivo es crear un script que abra la aplicación automáticamente, sin necesidad de acceder al PowerShell y ejecutar "python app.py". 
+El script se ha codificado correctamente. La ventana de PowerShell y el servidor de Flask se cierra automáticamente cuando cierras la ventana del navegador en la que se ejecuta la app.
+
+# --- 15/02/2025 --- #
+Se crea la documentación del proyecto, explicando el funcionamiento y distribución de los archivos.
