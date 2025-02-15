@@ -16,12 +16,19 @@ El IDE utilizado para codificar será Visual Studio Code. P
 Se comienza por crear la estructura inicial del proyecto. 
 
 /ProyAlgoritmoA
-   ├── app.py              # Backend con Flask y lógica del A*│
+
+   ├── app.py              # Backend con Flask y lógica del A*
+
    ├── templates/
+
    │    └── index.html     # Interfaz gráfica
+
    └── static/
+
         └── styles.css     # Estilos CSS
+
     ├── data               # Guarda archivos y datos para el modulo.
+
     ├── doc                # Documentación del proyecto.
 
 
@@ -42,18 +49,21 @@ Anteriormente, se ejecutaban los scripts en el HTML debido a que eran bastante s
 
 La estructura del proyecto pasa a ser: 
 /ProyAlgoritmoA
+
    ├── app.py
 
    ├── templates/
 
-   │    └── index.html
+   │    
+   
+        └── index.html
 
    └── static/
 
         ├── styles.css
 
         └── scripts.js # Nuevo archivo para JavaScript
-        
+
     ├── doc 
 
     ├── data  
@@ -67,6 +77,30 @@ El error provenía de un fallo de escritura en una funcion de los scripts de jav
 # --- 11/02/2025 --- #
 Procedemos a crear un script que instale las dependencias en el PC para su uso. Se ha llevado a cabo correctamente. No se ha podido comprobar el funcionamiento en un entorno en el que no se tiene Python instalado. El último objetivo es crear un script que abra la aplicación automáticamente, sin necesidad de acceder al PowerShell y ejecutar "python app.py". 
 El script se ha codificado correctamente. La ventana de PowerShell y el servidor de Flask se cierra automáticamente cuando cierras la ventana del navegador en la que se ejecuta la app.
+
+La estructura final del proyecto es:
+
+   ├── app.py
+
+   ├── templates/
+
+   │    
+   
+        └── index.html
+
+   └── static/
+
+        ├── styles.css
+
+        └── scripts.js 
+
+    ├── doc 
+
+    ├── data  
+
+    ├── instalar_dependencias.bat # Script que detecta dependencias.
+
+    ├── RutasA.bat # Script que ejecuta la aplicación.
 
 # --- 15/02/2025 --- #
 Se crea la documentación del proyecto, explicando el funcionamiento y distribución de los archivos.
