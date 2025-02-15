@@ -43,12 +43,19 @@ Anteriormente, se ejecutaban los scripts en el HTML debido a que eran bastante s
 La estructura del proyecto pasa a ser: 
 /ProyAlgoritmoA
    ├── app.py
+
    ├── templates/
+
    │    └── index.html
+
    └── static/
+
         ├── styles.css
-        └── scripts.js  # Nuevo archivo para JavaScript
+
+        └── scripts.js # Nuevo archivo para JavaScript
+        
     ├── doc 
+
     ├── data  
 
 Tras la aplicación de los scripts, se ha comprobado el funcionamiento de las nuevas funcionalidades. El botón de deshacer acción funciona, el de rehacer también, pero ahora no se muestra la ruta. 
