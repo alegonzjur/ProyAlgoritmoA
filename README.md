@@ -17,7 +17,7 @@ Este proyecto busca implementar el algoritmo A* para encontrar rutas óptimas en
 
 ## 4. Instalación
 Tras descargar el proyecto, seguir los siguientes pasos:
-- **Windows:** Ejecutar como administrador *install.bat* para instalar Python y Flask.
+- **Windows:** Ejecutar como administrador *instalar_dependencias.exe* para instalar Python y Flask.
 - **macOS/Linux:** El instalador no se ha codificado todavía. Mientras tanto:
 *apt install python*
 *pip install flask*
@@ -25,7 +25,7 @@ Tras descargar el proyecto, seguir los siguientes pasos:
 ## 5. Ejecución
 **Forma automática:** 
 
-Ejecutar como administrador el archivo *RutasA.bat*.
+Ejecutar como administrador el archivo *start_flask.exe*.
 
 **Forma manual:** 
 
@@ -87,6 +87,35 @@ Ejecutar como administrador el archivo *RutasA.bat*.
 
    └── README.md                 # Documentación principal
 
+
+
+|   app.py
+|   estructura.txt
+|   instalar_dependencias.exe
+|   README.md
+|   start_flask.exe
+|   
++---data
+|       python-3.13.0-amd64.exe
+|       
++---doc
+|       Dependencias.md
+|       Documentaci¾n.pdf
+|       Memoria.md
+|       
++---scripts
+  |       instalar_dependencias.ahk
+  |       instalar_dependencias.bat
+  |       RutasA.bat
+  |       start_flask.ahk
+  |       
++---static
+|       styles.css
+|       
+\---templates
+        index.html
+        scripts.js
+        
 ## 8. Detalles técnicos
 
 **Algoritmo A*:** 
